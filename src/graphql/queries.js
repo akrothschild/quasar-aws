@@ -17,7 +17,10 @@ export const syncTodos = /* GraphQL */ `
       items {
         id
         name
+        owner
+        date
         description
+        completed
         _version
         _deleted
         _lastChangedAt
@@ -34,7 +37,10 @@ export const getTodo = /* GraphQL */ `
     getTodo(id: $id) {
       id
       name
+      owner
+      date
       description
+      completed
       _version
       _deleted
       _lastChangedAt
@@ -53,7 +59,10 @@ export const listTodos = /* GraphQL */ `
       items {
         id
         name
+        owner
+        date
         description
+        completed
         _version
         _deleted
         _lastChangedAt
@@ -62,6 +71,37 @@ export const listTodos = /* GraphQL */ `
       }
       nextToken
       startedAt
+    }
+  }
+`;
+export const searchTodos = /* GraphQL */ `
+  query SearchTodos(
+    $filter: SearchableTodoFilterInput
+    $sort: SearchableTodoSortInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    searchTodos(
+      filter: $filter
+      sort: $sort
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        name
+        owner
+        date
+        description
+        completed
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      total
     }
   }
 `;

@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-quasaraws-dev-190741-authRole",
+      "UnauthRoleArn": "arn:aws:iam::091321312747:role/amplify-quasaraws-dev-190741-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::091321312747:role/amplify-quasaraws-dev-190741-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-quasaraws-dev-190741-deployment",
+      "UnauthRoleName": "amplify-quasaraws-dev-190741-unauthRole",
+      "StackName": "amplify-quasaraws-dev-190741",
+      "StackId": "arn:aws:cloudformation:eu-west-2:091321312747:stack/amplify-quasaraws-dev-190741/6fd7af60-1164-11eb-9171-0296bc619646",
+      "AmplifyAppId": "d8zuecqjrx0wh"
+    },
+    "categories": {
+      "auth": {
+        "quasaraws5e7ea5da": {},
+        "quasaraws198cc817": {}
+      },
+      "hosting": {}
+    }
+  }
+}
